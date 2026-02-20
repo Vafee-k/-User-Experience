@@ -1,0 +1,139 @@
+<!-- Your Name: coffee -->
+<!-- Declare the document type as HTML5 -->
+<!DOCTYPE html>
+
+<!-- Open the HTML tag -->
+<html lang="en">
+
+<!-- Open the head section -->
+<head>
+
+    <!-- Set character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Make the page responsive on all devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Open the title tag -->
+    <title>
+        <!-- Title text shown in the browser tab -->
+        My Meme Page
+    <!-- Close the title tag -->
+    </title>
+
+    <!-- Link the CSS file (make sure main.css is in the same folder) -->
+    <link rel="stylesheet" href="main.css">
+
+<!-- Close the head section -->
+</head>
+
+<!-- Open the body section -->
+<body>
+
+    <!-- Open the header section -->
+    <header>
+        <!-- Page title -->
+        <h1>Welcome to My Meme Page 😄</h1>
+    </header>
+
+    <!-- Open the nav section -->
+    <nav>
+        <!-- Navigation menu (required for class CSS rules) -->
+        <p><strong>Navigation</strong></p>
+        <p>Home</p>
+        <p>Memes</p>
+        <p>About</p>
+    </nav>
+
+    <!-- Main content area -->
+    <main>
+
+        <!-- Open a paragraph tag -->
+        <p>
+            <!-- Meme image -->
+            <img 
+                id="memeImage"
+                src="https://media1.tenor.com/m/CwSScpmEr_IAAAAd/me-who-me.gif"
+                alt="Me who me meme"
+            >
+        <!-- Close the paragraph tag -->
+        </p>
+
+        <!-- Section heading -->
+        <h3>Functions</h3>
+
+        <!-- Open JavaScript script tag -->
+        <script>
+            // Let's create a function
+            // Functions are a way to organize chunks of code
+            // Functions allow us to write code once and reuse it
+
+            // Create a function using the function keyword
+            function addNumbers() {
+
+                // Create 2 variables so we can add them together
+                let num1 = 5; // Hardcoding the value of 5
+                let num2 = 8; // Hardcoding the value of 8
+
+                // Create another variable to hold the sum
+                let sum = num1 + num2;
+
+                // Print the result to the console
+                console.log("The sum is:", sum);
+            }
+
+            // Call the function
+            addNumbers();
+        </script>
+
+        <!-- Decision Logic Section -->
+        <h3>Decision logic (if/else)</h3>
+
+        <script>
+            // Decision logic allows us to make choices in code
+
+            // Create a variable for testing
+            let firstname = "coffee";
+
+            // When testing an if statement, make sure to use === instead of =
+            // = is assignment (changes the value)
+            // === is comparison (checks the value)
+
+            if (firstname === "coffee") {
+                // Since firstname is coffee, this will run
+                console.log("Coffee is here!");
+            }
+            else if (firstname === "Coffee") {
+                // This checks a different version (capital C)
+                console.log("Coffee is still here, just spelled differently.");
+            }
+            else {
+                // Else is the catch-all if nothing matches
+                console.log("Coffee is not here.");
+            }
+        </script>
+
+        <!-- Loops Section -->
+        <h3>Loops</h3>
+
+        <script>
+            // Loops repeat code multiple times
+
+            // Example: for loop
+            for (let i = 1; i <= 5; i++) {
+                console.log("Loop number:", i);
+            }
+        </script>
+
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+        <p>© 2026 coffee Meme Page</p>
+    </footer>
+
+<!-- Close the body section -->
+</body>
+
+<!-- Close the HTML tag -->
+</html>
